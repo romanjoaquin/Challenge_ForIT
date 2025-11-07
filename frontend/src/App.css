@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:focus {
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: -webkit-radial-gradient(circle, #fff 0%, #bbb 85%) no-repeat;
+  background: radial-gradient(circle, #fff 0%, #bbb 85%) no-repeat;
+  min-height: 100vh;
+}
+
+.app {
+  font-family: 'Raleway', sans-serif;
+  flex: 1;
+  padding: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.task-list-container {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;  /* ← Controla el ancho máximo */
+  width: 100%;
+}
+
+.task-form-container {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;  /* ← Mismo ancho que la lista */
+  width: 100%;
+  margin: 0 auto;    /* ← Esto lo centra */
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 1rem;
+  }
+  
+  .task-list-container,
+  .task-form-container {
+    max-width: 100%;
+  }
+}
