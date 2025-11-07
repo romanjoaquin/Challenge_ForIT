@@ -257,3 +257,12 @@ npm install
 *   Validación de forms
     
 *   Diseño moderno
+
+**Capturas de Pantalla**
+-----------------------
+  
+<img width="1416" height="712" alt="4" src="https://github.com/user-attachments/assets/86aac478-0e9e-4137-99fa-b49f288300a0" />
+<img width="1416" height="821" alt="3" src="https://github.com/user-attachments/assets/7958d775-5f3f-4188-8487-39bacc0ccb35" />
+<img width="1416" height="712" alt="2" src="https://github.com/user-attachments/assets/e6e0fb72-5f01-496f-8215-9d17095a2c8c" />
+<img width="1416" height="894" alt="1" src="https://github.com/user-attachments/assets/67c1de3d-fc6f-459b-b24c-f6f729e0061c" />
+<img width="1416" height="835" alt="5" src="https://github.com/user-attachments/assets/d4bde2f5-52ca-447d-bff6-4fc1aa7633ad" />
