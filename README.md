@@ -27,6 +27,7 @@ App de lista de tareas hecha para el challenge de ForIT 2025.
 *   Almacenamiento en memoria
     
 
+
 **Frontend:**
 
 *   React con Vite
@@ -35,6 +36,7 @@ App de lista de tareas hecha para el challenge de ForIT 2025.
     
 *   CSS
     
+
 
 **Cómo ejecutarlo**
 -------------------
@@ -53,11 +55,27 @@ git clone https://github.com/TU-USUARIO/todo-app-forit.git
 cd todo-app-forit
 ```
 
+---
+
 ### **Paso 2: Backend**
 
 ```bash
 cd backend
 npm install
+```
+
+Instalar dependencias necesarias:
+
+```bash
+npm install express cors dotenv
+```
+
+Instalar nodemon para desarrollo (recomendado para evitar errores):
+
+```bash
+npm install -g nodemon
+# o localmente dentro del backend:
+npm install --save-dev nodemon
 ```
 
 Crear un archivo .env en la carpeta backend:
@@ -79,6 +97,8 @@ Deberías ver algo como:
 
 **Importante:** Dejá esta terminal abierta.
 
+---
+
 ### **Paso 3: Frontend**
 
 Abrí otra terminal y:
@@ -86,6 +106,13 @@ Abrí otra terminal y:
 ```bash
 cd frontend
 npm install
+```
+
+Instalar dependencias necesarias:
+
+```bash
+npm install react react-dom vite
+npm install --save-dev @vitejs/plugin-react
 ```
 
 Crear un archivo .env en la carpeta frontend:
@@ -102,9 +129,11 @@ npm run dev
 
 Vas a ver algo como:
 
-Local: http://localhost:5173/
+Local: http://localhost:5173/ , presione Ctrl mas click para ingresar al link desde Visual Studio Code hacia el navegador.
 
 Abrí esa URL en el navegador y listo.
+
+---
 
 **Estructura del proyecto**
 ---------------------------
@@ -125,6 +154,8 @@ todo-app-forit/
 └── README.md
 ```
 
+---
+
 **API**
 -------
 
@@ -139,6 +170,7 @@ El backend tiene estos endpoints:
 *   DELETE /api/tasks/:id - borra una tarea
     
 
+
 Ejemplo de una tarea:
 
 ```json
@@ -149,6 +181,8 @@ Ejemplo de una tarea:
   "completed": false
 }
 ```
+
+---
 
 **Comandos útiles**
 -------------------
@@ -168,6 +202,8 @@ npm run dev    # servidor de desarrollo
 npm run build  # build para producción
 ```
 
+---
+
 **Si algo no anda**
 -------------------
 
@@ -178,6 +214,8 @@ npm run build  # build para producción
 *   Fijate que el .env del frontend tenga la URL correcta
     
 *   Reiniciá Vite después de cambiar el .env
+
+*  La mayoria de los errores se solucionan con las dependencias correctas, intente verificar si instalo todas las previamente mencionadas tanto en la carpeta de backend como la de frontend.   
     
 
 **Puerto 3000 ocupado:**
@@ -195,6 +233,8 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
+---
+
 **Notas**
 ---------
 
@@ -204,6 +244,8 @@ npm install
     
 *   El código tiene ESLint configurado
     
+
+---
 
 **Bonus implementados**
 -----------------------
